@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Quick Save</string>
+    <string name="title_activity_main">Quick Save</string>
+    <string name="package_name">com.symoh.quicksave</string>
+    <string name="custom_url_scheme">com.symoh.quicksave</string>
+</resources>

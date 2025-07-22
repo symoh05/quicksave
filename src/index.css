@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* WhatsApp Green Primary Color */
+    --primary: 142 70% 49%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 142 70% 49%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 142 70% 49%;
+
+    /* WhatsApp specific colors */
+    --whatsapp-green: 142 70% 49%;
+    --whatsapp-green-dark: 142 70% 45%;
+    --whatsapp-light-bg: 210 20% 98%;
+    --whatsapp-chat-bg: 206 33% 96%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 17 20% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 17 20% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 17 20% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* WhatsApp Green for dark mode */
+    --primary: 142 70% 49%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 17 20% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 17 20% 12%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 142 70% 49%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 17 20% 15%;
+    --input: 17 20% 15%;
+    --ring: 142 70% 49%;
+
+    /* WhatsApp dark mode colors */
+    --whatsapp-green: 142 70% 49%;
+    --whatsapp-green-dark: 142 70% 45%;
+    --whatsapp-light-bg: 17 20% 11%;
+    --whatsapp-chat-bg: 17 20% 13%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
